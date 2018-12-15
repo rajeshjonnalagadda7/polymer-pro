@@ -1,0 +1,194 @@
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+    .my-cart {
+            margin-top:5%;
+            text-align: center;
+            font-family: 'Roboto', 'Noto', sans-serif;
+            margin-left: -3.5%;
+        }
+
+        .my-cart h1 {
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+
+        .my-cart span {
+            font-size: 12px;
+            color: rgb(117, 117, 117);
+        }
+
+
+        /*.footer {
+            
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+        }*/
+
+        .footer a {
+            font-size: 14px;
+            opacity: 0.6;
+
+        }
+        .block{
+            border:1px solid black;
+            align-self:center;
+
+        }
+        .flex-block{
+            font-size:13px;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            border:1px solid red;
+            height:300px;
+        }
+        .grid-block{
+          
+            display:grid;
+            grid-template-columns: 80px 40% 350px 20px;
+            border:1px solid green;
+            align-content:center;
+             
+            /* height:00px; */
+            width:80%;
+            height:90px;
+        }
+        .grid-block img{
+            width:70px;
+            height:70px;
+        }
+        .inner-flex{
+            display:flex;
+            justify-content:space-around;
+        }
+        .outter-flex{
+            display:none;
+            justify-content: flex-end;
+            width:75%;
+            margin-top:-4%;
+            margin-left:-10%;
+        }
+       
+        @media only screen and (max-width:760px) {
+            .grid-block{
+                grid-template-columns: 80px 80% 20px;
+            }
+            #hide{
+                display:none;
+            }
+            .outter-flex{
+            display:flex;
+            justify-content: flex-end;
+            width:85%;
+            margin-top:-4%;
+            margin-left:-5%;
+        }
+        @media only screen and (max-width:410px) {
+            .inner-flex{
+                flex-direction:column;
+                
+            }
+            .grid-block{
+                grid-template-columns: 80px 70% 20px;
+                
+            }
+        
+            .outter-flex{
+                justify-content:flex-end;   
+                width:500px;
+                margin-left:-425px;
+                margin-top:-30px;
+            }
+    }
+       
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="menu-icon"><span class="icon">&#9776;</span></div>
+        <h2><a href="./index.html">SHOP</a></h2>
+        <span class="cart-img"><a href="./cart-item.html"><img src="./resources/cart.png"></a></span>
+
+    </header>
+    <div class="my-cart">
+            <h1>Your Cart</h1>
+            <span>(1 item)</span>
+        </div>
+        <div class=flex-block>
+                <div class="grid-block">
+                        <div class=block>
+                                <a href="./menstechshellfullzip.html" title="Men's Tech Shell Full-Zip"><img src="./resources/m-outercart.jpg">
+                                </a>
+                        </div>
+                        <div class=block>
+                                <a href="./menstechshellfullzip.html">Men's Tech Shell Full-Zip</a>
+                        </div>
+                        <div  id="hide" class=block style=" margin-right:20px;">
+                            <div class="inner-flex">
+                                    <div class=select-wrap>
+                                            <label prefix="">Qty:</label>
+                                            <select id="quantitySelect" aria-label="Change quantity">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                        </div>
+                                        <div class="size">Size: <span>M</span></div>
+                <div class="price">$50.20</div>
+                                </div>
+                        </div>
+                        <div class=block>
+                                <div class="cross">X</div>
+                        </div>
+                       
+                </div>
+                <div   class=outter-flex>
+                        <div  class="inner-flex">
+                                <div class=select-wrap  style="margin-right:20px";>
+                                        <label prefix="">Qty:</label>
+                                        <select id="quantitySelect" aria-label="Change quantity">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                        </select>
+                                    </div>
+                                    <div class="size" style="margin-right:20px";>Size: <span>M</span></div>
+            <div class="price";>$50.20</div>
+                            </div>
+                    </div>
+                
+        </div>
+        
+</body>
+
+</html>
