@@ -1,0 +1,262 @@
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" type="text/css" href="styles.css" />-->
+    <style>
+        header {
+            margin-left: 5px;
+            margin-right: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 5%;
+            font-family: 'Roboto', 'Noto', sans-serif;
+        }
+
+        header img {
+            height: 20px;
+            width: 20px;
+            margin-right: 20px;
+            text-align: right;
+        }
+
+        header h2 {
+            color: rgb(32, 32, 32);
+
+            font-size: 16px;
+            margin-bottom: 22px;
+            font-weight: 600;
+            letter-spacing: 4.8px;
+            text-align: center;
+            font-family: 'Roboto', 'Noto', sans-serif;
+        }
+
+
+        header .menu-icon {
+            font-size: 30px;
+            margin-top: -12px;
+            /*margin-left: 15px;*/
+        }
+
+        .icon {
+            display: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .my-cart {
+            text-align: center;
+            font-family: 'Roboto', 'Noto', sans-serif;
+            margin-left: -3.5%;
+        }
+
+        .my-cart h1 {
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+
+        .my-cart span {
+            font-size: 12px;
+            color: rgb(117, 117, 117);
+        }
+
+
+        .footer {
+            /*margin-top: 32px;*/
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+        }
+
+        .footer a {
+            font-size: 14px;
+            opacity: 0.6;
+
+        }
+
+        .demo-label {
+            text-align: center;
+            width: 120px;
+            padding: 6px;
+            margin: 8px auto 0;
+            background-color: black;
+            color: white;
+        }
+
+        .mainframe {
+            display:flex;
+            flex-direction:row;
+            max-width: 900px;
+            overflow: hidden;
+            font-family: 'Roboto', 'Noto', sans-serif;
+            color: rgb(117, 117, 117);
+            font-size: 13px;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+
+        .mainframe img {
+            width: 72px;
+            height: 72px;
+            margin-top: 32px;
+            border: 1px solid black;
+        }
+
+        .mainframe .subframe {
+            display: flex;
+            flex-direction: row;
+            margin-top: 26px;
+            margin-left: 10px;
+            border: 1px solid black;
+            justify-items: flex-start;
+            width: 720px;
+        }
+
+        .subframe .name {
+            line-height: 20px;
+            font-weight: 500;
+            border: 1px solid black;
+        }
+
+        .name a {
+            display: inline-block;
+            max-width: 100%;
+            text-decoration: none;
+            color: #202020;
+            margin-top:26px;
+            white-space: nowrap;
+            overflow: hidden;
+            margin-right:10%;
+        }
+
+        .mainframe .cross {
+            margin-top: 32px;
+            margin-left:5%;
+            align-self:center;
+            /*border: 1px solid black;*/
+
+        }
+
+        .subframe .subframe-left {
+            margin-left:20%;
+            display: flex;
+            flex-direction: row;
+            margin-top: 26px;
+            width:100%
+            /*border: 1px solid black;*/
+
+        }
+
+        .subframe-left .select-wrap {
+            color: rgb(117, 117, 117);
+            font-family: "Roboto", "Noto", sans-serif;
+            font-size: 13px;
+            margin-left: 24px;
+            min-width: 80px;
+            width: 160px;
+            /*border: 1px solid black;*/
+
+        }
+
+        .subframe-left .size {
+            color: rgb(117, 117, 117);
+            display: block;
+            min-width: 40px;
+            white-space: nowrap;
+            width: 144px;
+            margin-top:8px;
+           /* border: 1px solid black;*/
+        }
+
+        .subframe-left .price {
+            color: rgb(117, 117, 117);
+            display: block;
+            min-width: 40px;
+            white-space: nowrap;
+            margin-top:8px;
+            /*margin-left: 24px;
+            border: 1px solid black;*/
+        }
+        .lower-right{
+            display:flex;
+            flex-direction: row;
+            justify-items:flex-end;
+        }
+        
+
+        @media only screen and (max-width:760px) {
+            .nav-tab {
+                display: none;
+            }
+
+            .icon {
+                display: initial;
+            }
+
+            .men-img {
+                display: none;
+            }
+
+            .list-items {
+                grid-template-columns: auto auto;
+            }
+
+            .subframe .subframe-left {
+                display:none;
+            }
+        }
+    </style>
+</head>
+
+<body style="display:block; border:1px solid black" ;>
+    <header>
+        <div class="menu-icon"><span class="icon">&#9776;</span></div>
+        <h2><a href="./index.html">SHOP</a></h2>
+        <span class="cart-img"><a href="#"><img src="./resources/cart.png"></a></span>
+    </header>
+
+    <div class="my-cart">
+        <h1>Your Cart</h1>
+        <span>(1 item)</span>
+    </div>
+    <div class="mainframe">
+        <a href="./menstechshellfullzip.html" title="Men's Tech Shell Full-Zip"><img src="./resources/m-outercart.jpg">
+        </a>
+        <div class="subframe" id="upper-right">
+            <div class="name">
+                <a href="./menstechshellfullzip.html">Men's Tech Shell Full-Zip</a>
+            </div>
+            <div class=subframe-left>
+                <div class=select-wrap>
+                    <label prefix="">Qty:</label>
+                    <select id="quantitySelect">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+                <div class="size">Size: <span>M</span></div>
+                <div class="price">$50.20</div>
+            </div>
+        </div>
+        <div class="cross">X</div>
+    </div>
+    
+</body>
+
+</html>

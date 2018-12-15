@@ -1,0 +1,145 @@
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+
+
+        /*@media only screen and (max-width:760px) {
+            .nav-tab {
+                display: none;
+            }
+
+            .icon {
+                display: initial;
+            }
+
+            .men-img {
+                display: none;
+            }
+            .list-items{
+                grid-template-columns: auto auto;
+            }
+            .shop-content{
+                grid-template-columns:100%; 
+                margin:10px;    
+            }
+            .shop-content .details h1{
+                width:100%;
+                font-size: 20px;
+                line-height: 24px;
+            } 
+            
+            .footer-button button{
+                display:initial;
+                position:fixed;
+                background-color:#172C50;
+                border: none;
+                color: white;
+                left:0px;     
+                bottom:-5px;
+                padding: 15px;
+                width: 100%;
+                height: 10%;
+                font-size: 15px;
+                text-align:center;
+            }
+            .footer{
+                display: none;
+            }
+            .item-button{
+                display:none;
+                
+            }.empty-footer{
+                display:block;
+                width:100%;
+                height:20%;
+            }
+        }*/
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="menu-icon"><span class="icon">&#9776;</span></div>
+        <h2><a href="./index.html">SHOP</a></h2>
+        <span class="cart-img"><a href="./cart-item.html"><img src="./resources/cart.png"></a></span>
+
+    </header>
+    <div class="nav-tab">
+        <a href="./mens-outerwear.html">Men's Outerwear</a>
+        <a href=#>Ladies Outerwear</a>
+        <a href=#>Men's T-Shirts</a>
+        <a href=#>Ladies T-Shirts</a>
+    </div>
+    <div class="shop-content">
+        <div class="selected-outerwear-img"><img src="./resources/m-outer1.jpg">
+        </div>
+        <div class="details has-content">
+            <h1>Men's Tech Shell Full-Zip</h1>
+            <div class="price">$50.20</div>
+            <hr>
+            <div class="drop-down">
+
+                <div class="select-wrap">
+                    <label>Size</label>
+                    <select class="size-select">
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M" selected="">M</option>
+                        <option value="XL">XL</option>
+                    </select>
+                </div>
+
+                <hr>
+                <div class="select-wrap">
+                    <label>Quantity</label>
+                    <select class="quntity-select">
+                        <option value="1" selected="">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="description">
+                <h2>Description</h2>
+                <p>A versatile full-zip that you can wear all day long and even to the gym. This technical shell
+                    features moisture-wicking fabric, added stretch and a hidden pocket for your smartphone or media
+                    player.&nbsp;<div><br></div>
+                    <div style="color:rgb(117, 117, 117);font-size:13px" ;>Features:</div>
+                    <div>
+                        <ul>
+                            <li>100% polyester.</li>
+                            <li>Smooth, technical front with textured mesh back.</li>
+                            <li>Drawstring bottom for adjustable fit.</li>
+                            <li>Raglan sleeves.</li>
+                            <li>Available in forest green with the white Google logo embroidered at left chest.</li>
+                        </ul>
+                    </div>
+                </p>
+            </div>
+
+            <div id="left-align" class="item-button"><a href="./index.html"><button type="button">ADD TO CART</button></a>
+                <div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=empty-footer></div>
+    <div class="footer-button"><a href="./index.html"><button type="button">ADD TO CART</button><a></div>
+    <div class="footer">
+        <a href="#">Made by Polymer</a>
+        <div class="demo-label">DEMO ONLY</div>
+
+    </div>
+
+
+</body>
+
+</html>

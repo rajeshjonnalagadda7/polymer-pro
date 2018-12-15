@@ -1,0 +1,115 @@
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+        .checkout{
+            margin-top:40px;
+            text-align:center;
+            margin-left:-3%;
+            font-family: 'Roboto', 'Noto', sans-serif;
+        }
+        .checkout h1{
+            margin: 0 0 4px 0;
+            font-size: 16.9px;
+            font-weight: 500;
+            
+
+        }
+        .checkout span{
+            color: rgb(117, 117, 117);
+            font-size: 12px;
+            text-align: center;
+        }
+        /*.checkout-flex{
+            justify-content:space-around;
+            margin-top: 40px;
+            display:flex;
+        }
+        .grid-left{
+            display:grid;
+            grid-template-columns: 1fr;
+            font-family: 'Roboto', 'Noto', sans-serif;
+        }
+        .grid-right{
+            grid-template-columns: 1fr;
+            font-family: 'Roboto', 'Noto', sans-serif;
+        }
+        .grid-left h2{
+            font-size:13px;
+        }
+        .grid-right h2{
+            font-size:13px;
+        }*/
+        .checkout-state-zip{
+            display:flex;
+        }
+        .bill-checkbox{
+            display:flex;
+        }
+        input, select{
+            background-color: transparent;
+            border:none;
+            widows: 100%;
+            display: block;
+            border-bottom: 1px solid rgba(0,0,0,0.2);
+            height: 50px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="menu-icon"><span class="icon">&#9776;</span></div>
+        <h2><a href="./index.html">SHOP</a></h2>
+        <span class="cart-img"><a href="./cart-item.html"><img src="./resources/cart.png"></a></span>
+
+    </header>
+    <div class="checkout">
+            <h1>Checkout</h1>
+            <span>Shop is a demo app - form data will not be sent</span>
+        </div>
+        <!--
+            <div class="checkout-flex">
+            <div class="grid-left">
+                <section>
+                    <h2 id="accountInfoHeading">Account Information</h2>
+                    </section>
+            </div>
+            <div class="grid-right">
+                    <section>
+                            <h2>Payment Method</h2>
+            </div>
+
+        </div>
+        -->
+        <h5>Account Information</h5>
+        <input type="email" placeholder="Email">
+        <input type="tel" placeholder="Phone Number">
+        <h5>Shipping Address</h5>
+        <input type="text" placeholder="Address">
+        <input type="text" placeholder="City">
+        <div class="checkout-state-zip">
+            <input type="text" placeholder="State/Province">
+            <input type="text" placeholder="Zip/Postal Code">
+        
+        </div>
+        <select name="shipCountry">
+                <option value="US" selected="">United States</option>
+                <option value="CA">Canada</option>
+              </select>
+        <h5>Billing Address</h5>
+       <div class=bill-checkbox><input type="checkbox">
+        <div>Use different billing address</div>
+        </div>
+        <!-- <h5>Payment Method</h5> -->
+
+
+
+</body>
+
+</html>
